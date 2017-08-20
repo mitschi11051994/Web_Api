@@ -1,9 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
-    <title>Usuario</title>
+    <title>Client</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
@@ -36,6 +35,7 @@
             border: 11px solid #96d4c8;
         }
     </style>
+
 </head>
 <body>
     <div class="container">
@@ -47,7 +47,7 @@
                     <div id="apDiv1">
                         <table border="0">
                             <tr>
-                                <td><img class="profile-img" src="https://images.vexels.com/media/users/3/135247/isolated/preview/e70a6296c2a79dc7a56ab05b103f38e8-signo-del-usuario-con-el-fondo-by-vexels.png" align="left" /><a href="@Url.Action("Clientes", "Clientes/Index")">Clientes</a></td>
+                                <td><img class="profile-img" src="https://images.vexels.com/media/users/3/135247/isolated/preview/e70a6296c2a79dc7a56ab05b103f38e8-signo-del-usuario-con-el-fondo-by-vexels.png" align="left" /><a href="@Url.Action("Clientes", "tblClient/Index")">Clientes</a></td>
                                 <td><img class="profile-img" src="http://simplework.es/wp-content/uploads/2016/12/salasdereunion.png" align="left" /> <a href="@Url.Action("Reuniones", "tblReunions1/Index")">Reuniones</a></td>
                                 <td><img class="profile-img" src="http://alfarored.com/templates/alfarored/images/contacto.png" align="left" /> <a href="@Url.Action("Contactos", "tblContact/Index")" />Contactos</td>
                                 <td><img class="profile-img" src="https://www.apspayroll.com/wp-content/blog-images/checklist-icon-350.png" align="left" /> <a href="@Url.Action("Soporte_Tiquetes", "tblSupport_Tickets/Index")" />Tiquetes Soporte</td>

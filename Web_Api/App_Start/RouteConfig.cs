@@ -18,6 +18,12 @@ namespace Web_Api
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Cliente",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Clientes", action = "Index", id = UrlParameter.Optional }
+            );
         }
     }
 }

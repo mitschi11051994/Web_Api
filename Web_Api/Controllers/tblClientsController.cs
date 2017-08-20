@@ -8,21 +8,23 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using System.Web.Mvc;
 using Web_Api.Models;
 
 namespace Web_Api.Controllers
 {
-    public class tblClientController : ApiController
+    public class tblClientsController : ApiController
     {
         private CMDEntities db = new CMDEntities();
 
-        // GET: api/Clientes
+      
+        // GET: api/tblClients
         public IQueryable<tblClient> GettblClient()
         {
             return db.tblClient;
         }
 
-        // GET: api/Clientes/5
+        // GET: api/tblClients/5
         [ResponseType(typeof(tblClient))]
         public IHttpActionResult GettblClient(int id)
         {
@@ -35,7 +37,7 @@ namespace Web_Api.Controllers
             return Ok(tblClient);
         }
 
-        // PUT: api/Clientes/5
+        // PUT: api/tblClients/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PuttblClient(int id, tblClient tblClient)
         {
@@ -70,7 +72,7 @@ namespace Web_Api.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Clientes
+        // POST: api/tblClients
         [ResponseType(typeof(tblClient))]
         public IHttpActionResult PosttblClient(tblClient tblClient)
         {
@@ -85,7 +87,7 @@ namespace Web_Api.Controllers
             return CreatedAtRoute("DefaultApi", new { id = tblClient.id_client }, tblClient);
         }
 
-        // DELETE: api/Clientes/5
+        // DELETE: api/tblClients/5
         [ResponseType(typeof(tblClient))]
         public IHttpActionResult DeletetblClient(int id)
         {

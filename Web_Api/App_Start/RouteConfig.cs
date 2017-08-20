@@ -22,7 +22,7 @@ namespace Web_Api
             routes.MapRoute(
                 name: "Clientes",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "tblClient", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "IndexClient", id = UrlParameter.Optional }
             );
         }
     }

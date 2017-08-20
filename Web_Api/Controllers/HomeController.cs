@@ -14,5 +14,28 @@ namespace Web_Api.Controllers
 
             return View();
         }
+
+        public ActionResult IndexClient() { 
+
+            return View();
+        }
+
+        public ActionResult IndexReunion()
+        {
+
+            return View();
+        }
+
+        public ActionResult IndexContact()
+        {
+
+            return View();
+        }
+
+        public ActionResult IndexSuportTiket()
+        {
+
+            return View();
+        }
     }
 }
